@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Finance Tools</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .welcome-container {
+      text-align: center;
+      animation: fadeInScale 2s ease-in-out;
+    }
+
+    @keyframes fadeInScale {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .buttons a {
+      flex: 1;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.2rem;
+      color: #fff;
+      text-decoration: none;
+      background-color: #3498db;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #2980b9;
+    }
+
+    .buttons a.secondary {
+      background-color: #e67e22;
+    }
+
+    .buttons a.secondary:hover {
+      background-color: #d35400;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="welcome-container">
+    <div class="card">
+      <h1>Welcome to Finance Tools</h1>
+      <div class="buttons">
+        <a href="../exchange currency converter/indexx.html">Currency Converter</a>
+        <a class="secondary" href="../metal pricing/index.html">Metal Pricing & Calculator</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
